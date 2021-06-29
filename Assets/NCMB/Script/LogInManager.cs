@@ -67,7 +67,7 @@ public class LogInManager : MonoBehaviour {
   }
 
   private void drawLogInMenu()
-  {  GUI.skin.label.fontSize = 20;
+  {  GUI.skin.label.fontSize = 20;// 文字サイズ
     // テキスト切り替え
     guiTextSignUp.SetActive (false);
     guiTextLogIn.SetActive (true);
@@ -83,9 +83,9 @@ public class LogInManager : MonoBehaviour {
     GUI.skin.button.fontSize = 20;
     logInButton      = GUI.Button( new Rect(Screen.width*1/4 - btnW*1/2, Screen.height*3/4 - btnH*1/2, btnW, btnH), "Log In" );
     signUpMenuButton = GUI.Button( new Rect(Screen.width*3/4 - btnW*1/2, Screen.height*3/4 - btnH*1/2, btnW, btnH), "Sign Up" );
-    GUI.Label(new Rect(300, 130, 200, 200), "Pass");
-    GUI.Label(new Rect(400, 20, 200, 200), "Login");
-    GUI.Label(new Rect(300, 80, 200, 200), "ID");
+    GUI.Label(new Rect(150, 130, 200, 200), "Pass");
+    GUI.Label(new Rect(300, 20, 200, 200), "Login");
+    GUI.Label(new Rect(150, 80, 200, 200), "ID");
   }
 
   private void drawSignUpMenu()
@@ -106,9 +106,9 @@ public class LogInManager : MonoBehaviour {
     GUI.skin.button.fontSize = 20;
     signUpButton = GUI.Button( new Rect(Screen.width*1/4 - btnW*1/2, Screen.height*3/4 - btnH*1/2, btnW, btnH), "Sign Up" );
     backButton   = GUI.Button( new Rect(Screen.width*3/4 - btnW*1/2, Screen.height*3/4 - btnH*1/2, btnW, btnH), "Back" );
-    GUI.Label(new Rect(300, 100, 200, 200), "Pass");
-    GUI.Label(new Rect(400, 20, 200, 200), "SignUp");
-    GUI.Label(new Rect(300, 140, 200, 200), "Mail"); 
-    GUI.Label(new Rect(300, 60, 200, 200), "ID"); 
+    GUI.Label(new Rect(150, 100, 200, 200), "Pass");
+    GUI.Label(new Rect(300, 20, 200, 200), "SignUp");
+    GUI.Label(new Rect(150, 140, 200, 200), "Mail"); 
+    GUI.Label(new Rect(150, 60, 200, 200), "ID"); 
   }
 }
